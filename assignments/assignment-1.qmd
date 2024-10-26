@@ -2,14 +2,97 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
-
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
 
-## (a)
+## (a) Tasks about the video titled "Conversations on Data Science and Industrial Engineering – Cem Vardar & Erdi Daşdemir"
+
+**A brief summary of the content of the video I chose:**
+
+In the video titled “Conversations on Data Science and Industrial Engineering – Cem Vardar & Erdi Daşdemir”, Cem Vardar gives information about his education in Industrial Engineering and the data-related position he has evolved into, then gives general information about engineering under the title of “Engineering and Problem Solving” and emphasizes that industrial engineering is specifically about more complex areas and systems. He emphasizes the closeness of the subject of “Data Science and Industrial Engineering” by associating the use of data to solve problems and the ability of industrial engineers to solve problems with various tools. In the field of data, he explains a range of work from the general to the more specific perspective, from the meaning extracted from data to the use of data in specific areas such as operations and machine learning. In the next part, we learn how data is used in predictive modeling, product analysis, communication technologies departments for a company where Cem Bey works, how data is used to make models and derive meaning, and how these results are used in decision-making stages for the company. Then, soft skills such as analytical thinking and problem-solving skills that data scientists should have, and technical skills such as data collection, visualization, and modeling are discussed, and how these skills are similar to those required for industrial engineering. In light of his own knowledge, he provides information about topics where we can specialize in data science in areas that will take place in the industry in the future. Finally, he offers some suggestions for resources that are important for business and career life and that have recently contributed to his own perspective.
+
+**Multiple choice and open-ended questions and answers that I prepared about the topics in the video:**
+
+**Q1.**Which of the following is not one of the areas where operations research and data science are used together?
+
+a\) Logistics Planning
+
+b\) Inventory Management
+
+c\) Production Planning
+
+**d) Customer Relationships Management**
+
+**Answer:** "Option D". Because Customer Relationship Management; studies customer interactions, satisfaction, and loyalty. Operations research is generally concerned with optimizing systems, data analysis, and decision-making processes. CRM is more concerned with human relations and communication strategies, so it is not directly related to mathematical modeling or operational efficiency. Therefore, it cannot be associated with operations research and data science.
+
+**Q2.** What do you think are the soft and technical qualities a data scientist should have? Please explain in detail.
+
+**Answer:**
+
+**1.Soft Skills:**
+
+-   Analytical Thinking: Provides the ability to solve complex problems. Provides a systematic approach to understanding and interpreting data.
+
+-   Problem Solving Skills: The ability to identify, analyze and develop effective solutions to data-driven problems.
+
+-   Curiosity and Desire to Understand: The desire to discover new information and analyze existing data in detail is crucial to finding innovative solutions.
+
+    **2.Technical Skills:**
+
+-   Data Collection and Processing: Having the technical knowledge required to effectively collect, organize and process data.
+
+-   Data Visualization: The ability to create graphs and visuals to present data in an understandable and effective way.
+
+-   Modeling and Statistical Analysis: The ability to analyze data sets, make predictions and evaluate results, thus supporting decision-making processes.
 
 ## (b)
+
+I imported the dataset “polls_us_election_2016” from the dslabs package and displayed the first 10 rows of the dataset using the kableExtra library to get more readable output:
+
+```{r}
+library(dslabs)
+data("polls_us_election_2016")
+knitr::kable(head(polls_us_election_2016, 10))
+```
+
+Then I calculated and displayed the total number of NA values in the entire dataset:
+
+```{r}
+total_na <- sum(is.na(polls_us_election_2016))
+total_na
+```
+
+I replaced all NA values in the “polls_us_election_2016” dataset with my birth year for numeric columns and my name for character or factor columns:
+
+```{r}
+birth_year <- 2002
+first_name <- "Melis"
+
+polls_us_election_2016_modified <- polls_us_election_2016
+
+for (i in 1:nrow(polls_us_election_2016_modified)) {
+    for (j in 1:ncol(polls_us_election_2016_modified)) {
+        if (is.na(polls_us_election_2016_modified[i, j])) {
+            if (is.numeric(polls_us_election_2016_modified[[j]])) {
+                polls_us_election_2016_modified[i, j] <- birth_year
+            } else {
+              
+                if (is.factor(polls_us_election_2016_modified[[j]])) {
+                    polls_us_election_2016_modified[[j]] <- as.character(polls_us_election_2016_modified[[j]])
+                }
+                polls_us_election_2016_modified[i, j] <- first_name
+            }
+        }
+    }
+}
+```
+
+Finally, I printed the first 10 rows of our new data frame polls_us_election_2016_modified and the total number of NAs remaining in the new data frame:
+
+```{r}
+knitr::kable(head(polls_us_election_2016_modified, 10))
+```
+
+```{r}
+total_na <- sum(is.na(polls_us_election_2016_modified))
+total_na
+```

@@ -5,26 +5,30 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2020 - ongoing.
 
-# Work Experience
+# Internships
 
-## Employements
+1.  Anadolu Efes Biracılık ve Malt San. A.Ş., Sales Intern, August 2024 - September 2024
 
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
-
-## Internships
-
-1.  Firm aaa, position xx, year xxx
-
-2.  Firm bbb, position yyy, year yyy
+2.  Vestel Elektronik Sanayi ve Ticaret A.Ş., Production Planning Intern, June 2024 - July 2024
 
 # Projects
 
+-   Hacettepe University Workflow Diagram
+
+-   Facility Layout Planning
+
 # Competencies
 
-R, Quarto, Git, Python
+-   R, Quarto, Git, Python, Minitab, Excel, Matlab, SQL, MS Office, AutoCAD
 
-# Hobbies
+# Hobies
+
+-   Fitness, Tennis
+
+# Resume
+
+![](images/ok-01.gif){width="42"}
+
+[Download as PDF](https://github.com/emu-hacettepe-analytics/emu430-fall2024-melisatay/raw/main/docs/MelisAtayCV.pdf)

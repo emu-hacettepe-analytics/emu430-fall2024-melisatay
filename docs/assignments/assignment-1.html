@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>[Student/Group Full Name]’s Analytics Lab - Assignment 1</title>
+<title>Assignment 1 – Melis Atay’s Analytics Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -83,7 +83,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -92,6 +98,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -106,65 +113,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">[Student/Group Full Name]’s Analytics Lab</span>
+    <span class="navbar-title">Melis Atay’s Analytics Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
- <span class="menu-text">About Me</span></a>
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts.html" rel="" target="">
- <span class="menu-text">My Posts</span></a>
+    <a class="nav-link" href="../posts.html"> 
+<span class="menu-text">My Posts</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-emu430-coursework" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-emu430-coursework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">EMU430 Coursework</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-emu430-coursework">    
         <li>
-    <a class="dropdown-item" href="../assignments.html" rel="" target="">
+    <a class="dropdown-item" href="../assignments.html">
  <span class="dropdown-text">Assignments</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../project.html" rel="" target="">
+    <a class="dropdown-item" href="../project.html">
  <span class="dropdown-text">Project</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto tools-wide">
-    <a href="https://twitter.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://linkedin.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/melisatay" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://www.instagram.com/melis_atayyy/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/melis-atay1" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/assignment-1.html">Assignment 1</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/assignment-1.html">Assignment 1</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -173,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -205,17 +212,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#assignment-1" id="toc-assignment-1" class="nav-link active" data-scroll-target="#assignment-1">Assignment 1</a>
-  <ul class="collapse">
-  <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">(a)</a></li>
+  <li><a href="#a-tasks-about-the-video-titled-conversations-on-data-science-and-industrial-engineering-cem-vardar-erdi-daşdemir" id="toc-a-tasks-about-the-video-titled-conversations-on-data-science-and-industrial-engineering-cem-vardar-erdi-daşdemir" class="nav-link active" data-scroll-target="#a-tasks-about-the-video-titled-conversations-on-data-science-and-industrial-engineering-cem-vardar-erdi-daşdemir">(a) Tasks about the video titled “Conversations on Data Science and Industrial Engineering – Cem Vardar &amp; Erdi Daşdemir”</a></li>
   <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
-  </ul></li>
   </ul>
 </nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,25 +239,511 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
 
-<section id="assignment-1" class="level1">
-<h1>Assignment 1</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+
 <p>My first assignment has two parts.</p>
-<section id="a" class="level2">
-<h2 class="anchored" data-anchor-id="a">(a)</h2>
+<section id="a-tasks-about-the-video-titled-conversations-on-data-science-and-industrial-engineering-cem-vardar-erdi-daşdemir" class="level2">
+<h2 class="anchored" data-anchor-id="a-tasks-about-the-video-titled-conversations-on-data-science-and-industrial-engineering-cem-vardar-erdi-daşdemir">(a) Tasks about the video titled “Conversations on Data Science and Industrial Engineering – Cem Vardar &amp; Erdi Daşdemir”</h2>
+<p><strong>A brief summary of the content of the video I chose:</strong></p>
+<p>In the video titled “Conversations on Data Science and Industrial Engineering – Cem Vardar &amp; Erdi Daşdemir”, Cem Vardar gives information about his education in Industrial Engineering and the data-related position he has evolved into, then gives general information about engineering under the title of “Engineering and Problem Solving” and emphasizes that industrial engineering is specifically about more complex areas and systems. He emphasizes the closeness of the subject of “Data Science and Industrial Engineering” by associating the use of data to solve problems and the ability of industrial engineers to solve problems with various tools. In the field of data, he explains a range of work from the general to the more specific perspective, from the meaning extracted from data to the use of data in specific areas such as operations and machine learning. In the next part, we learn how data is used in predictive modeling, product analysis, communication technologies departments for a company where Cem Bey works, how data is used to make models and derive meaning, and how these results are used in decision-making stages for the company. Then, soft skills such as analytical thinking and problem-solving skills that data scientists should have, and technical skills such as data collection, visualization, and modeling are discussed, and how these skills are similar to those required for industrial engineering. In light of his own knowledge, he provides information about topics where we can specialize in data science in areas that will take place in the industry in the future. Finally, he offers some suggestions for resources that are important for business and career life and that have recently contributed to his own perspective.</p>
+<p><strong>Multiple choice and open-ended questions and answers that I prepared about the topics in the video:</strong></p>
+<p><strong>Q1.</strong>Which of the following is not one of the areas where operations research and data science are used together?</p>
+<p>a) Logistics Planning</p>
+<p>b) Inventory Management</p>
+<p>c) Production Planning</p>
+<p><strong>d) Customer Relationships Management</strong></p>
+<p><strong>Answer:</strong> “Option D”. Because Customer Relationship Management; studies customer interactions, satisfaction, and loyalty. Operations research is generally concerned with optimizing systems, data analysis, and decision-making processes. CRM is more concerned with human relations and communication strategies, so it is not directly related to mathematical modeling or operational efficiency. Therefore, it cannot be associated with operations research and data science.</p>
+<p><strong>Q2.</strong> What do you think are the soft and technical qualities a data scientist should have? Please explain in detail.</p>
+<p><strong>Answer:</strong></p>
+<p><strong>1.Soft Skills:</strong></p>
+<ul>
+<li><p>Analytical Thinking: Provides the ability to solve complex problems. Provides a systematic approach to understanding and interpreting data.</p></li>
+<li><p>Problem Solving Skills: The ability to identify, analyze and develop effective solutions to data-driven problems.</p></li>
+<li><p>Curiosity and Desire to Understand: The desire to discover new information and analyze existing data in detail is crucial to finding innovative solutions.</p>
+<p><strong>2.Technical Skills:</strong></p></li>
+<li><p>Data Collection and Processing: Having the technical knowledge required to effectively collect, organize and process data.</p></li>
+<li><p>Data Visualization: The ability to create graphs and visuals to present data in an understandable and effective way.</p></li>
+<li><p>Modeling and Statistical Analysis: The ability to analyze data sets, make predictions and evaluate results, thus supporting decision-making processes.</p></li>
+</ul>
 </section>
 <section id="b" class="level2">
 <h2 class="anchored" data-anchor-id="b">(b)</h2>
+<p>I imported the dataset “polls_us_election_2016” from the dslabs package and displayed the first 10 rows of the dataset using the kableExtra library to get more readable output:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"polls_us_election_2016"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(polls_us_election_2016, <span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 23%">
+<col style="width: 2%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">state</th>
+<th style="text-align: left;">startdate</th>
+<th style="text-align: left;">enddate</th>
+<th style="text-align: left;">pollster</th>
+<th style="text-align: left;">grade</th>
+<th style="text-align: right;">samplesize</th>
+<th style="text-align: left;">population</th>
+<th style="text-align: right;">rawpoll_clinton</th>
+<th style="text-align: right;">rawpoll_trump</th>
+<th style="text-align: right;">rawpoll_johnson</th>
+<th style="text-align: right;">rawpoll_mcmullin</th>
+<th style="text-align: right;">adjpoll_clinton</th>
+<th style="text-align: right;">adjpoll_trump</th>
+<th style="text-align: right;">adjpoll_johnson</th>
+<th style="text-align: right;">adjpoll_mcmullin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">ABC News/Washington Post</td>
+<td style="text-align: left;">A+</td>
+<td style="text-align: right;">2220</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">47.00</td>
+<td style="text-align: right;">43.00</td>
+<td style="text-align: right;">4.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">45.20163</td>
+<td style="text-align: right;">41.72430</td>
+<td style="text-align: right;">4.626221</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-01</td>
+<td style="text-align: left;">2016-11-07</td>
+<td style="text-align: left;">Google Consumer Surveys</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">26574</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">38.03</td>
+<td style="text-align: right;">35.69</td>
+<td style="text-align: right;">5.46</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">43.34557</td>
+<td style="text-align: right;">41.21439</td>
+<td style="text-align: right;">5.175792</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-02</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Ipsos</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">2195</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">42.00</td>
+<td style="text-align: right;">39.00</td>
+<td style="text-align: right;">6.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">42.02638</td>
+<td style="text-align: right;">38.81620</td>
+<td style="text-align: right;">6.844734</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-04</td>
+<td style="text-align: left;">2016-11-07</td>
+<td style="text-align: left;">YouGov</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">3677</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">45.00</td>
+<td style="text-align: right;">41.00</td>
+<td style="text-align: right;">5.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">45.65676</td>
+<td style="text-align: right;">40.92004</td>
+<td style="text-align: right;">6.069454</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Gravis Marketing</td>
+<td style="text-align: left;">B-</td>
+<td style="text-align: right;">16639</td>
+<td style="text-align: left;">rv</td>
+<td style="text-align: right;">47.00</td>
+<td style="text-align: right;">43.00</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">46.84089</td>
+<td style="text-align: right;">42.33184</td>
+<td style="text-align: right;">3.726098</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Fox News/Anderson Robbins Research/Shaw &amp; Company Research</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">1295</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">48.00</td>
+<td style="text-align: right;">44.00</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">49.02208</td>
+<td style="text-align: right;">43.95631</td>
+<td style="text-align: right;">3.057876</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-02</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">CBS News/New York Times</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">1426</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">45.00</td>
+<td style="text-align: right;">41.00</td>
+<td style="text-align: right;">5.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">45.11649</td>
+<td style="text-align: right;">40.92722</td>
+<td style="text-align: right;">4.341786</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-05</td>
+<td style="text-align: left;">NBC News/Wall Street Journal</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">1282</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">44.00</td>
+<td style="text-align: right;">40.00</td>
+<td style="text-align: right;">6.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">43.58576</td>
+<td style="text-align: right;">40.77325</td>
+<td style="text-align: right;">5.365788</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">New Mexico</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Zia Poll</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">8439</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">46.00</td>
+<td style="text-align: right;">44.00</td>
+<td style="text-align: right;">6.00</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">44.82594</td>
+<td style="text-align: right;">41.59978</td>
+<td style="text-align: right;">7.870127</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-04</td>
+<td style="text-align: left;">2016-11-07</td>
+<td style="text-align: left;">IBD/TIPP</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">1107</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">41.20</td>
+<td style="text-align: right;">42.70</td>
+<td style="text-align: right;">7.10</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">42.92745</td>
+<td style="text-align: right;">42.23545</td>
+<td style="text-align: right;">6.316175</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Then I calculated and displayed the total number of NA values in the entire dataset:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>total_na <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(polls_us_election_2016))</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>total_na</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11604</code></pre>
+</div>
+</div>
+<p>I replaced all NA values in the “polls_us_election_2016” dataset with my birth year for numeric columns and my name for character or factor columns:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>birth_year <span class="ot">&lt;-</span> <span class="dv">2002</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>first_name <span class="ot">&lt;-</span> <span class="st">"Melis"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>polls_us_election_2016_modified <span class="ot">&lt;-</span> polls_us_election_2016</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(polls_us_election_2016_modified)) {</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(polls_us_election_2016_modified)) {</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (<span class="fu">is.na</span>(polls_us_election_2016_modified[i, j])) {</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> (<span class="fu">is.numeric</span>(polls_us_election_2016_modified[[j]])) {</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>                polls_us_election_2016_modified[i, j] <span class="ot">&lt;-</span> birth_year</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>            } <span class="cf">else</span> {</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>              </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> (<span class="fu">is.factor</span>(polls_us_election_2016_modified[[j]])) {</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                    polls_us_election_2016_modified[[j]] <span class="ot">&lt;-</span> <span class="fu">as.character</span>(polls_us_election_2016_modified[[j]])</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                }</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>                polls_us_election_2016_modified[i, j] <span class="ot">&lt;-</span> first_name</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finally, I printed the first 10 rows of our new data frame polls_us_election_2016_modified and the total number of NAs remaining in the new data frame:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(polls_us_election_2016_modified, <span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 23%">
+<col style="width: 2%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">state</th>
+<th style="text-align: left;">startdate</th>
+<th style="text-align: left;">enddate</th>
+<th style="text-align: left;">pollster</th>
+<th style="text-align: left;">grade</th>
+<th style="text-align: right;">samplesize</th>
+<th style="text-align: left;">population</th>
+<th style="text-align: right;">rawpoll_clinton</th>
+<th style="text-align: right;">rawpoll_trump</th>
+<th style="text-align: right;">rawpoll_johnson</th>
+<th style="text-align: right;">rawpoll_mcmullin</th>
+<th style="text-align: right;">adjpoll_clinton</th>
+<th style="text-align: right;">adjpoll_trump</th>
+<th style="text-align: right;">adjpoll_johnson</th>
+<th style="text-align: right;">adjpoll_mcmullin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">ABC News/Washington Post</td>
+<td style="text-align: left;">A+</td>
+<td style="text-align: right;">2220</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">47.00</td>
+<td style="text-align: right;">43.00</td>
+<td style="text-align: right;">4.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">45.20163</td>
+<td style="text-align: right;">41.72430</td>
+<td style="text-align: right;">4.626221</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-01</td>
+<td style="text-align: left;">2016-11-07</td>
+<td style="text-align: left;">Google Consumer Surveys</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">26574</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">38.03</td>
+<td style="text-align: right;">35.69</td>
+<td style="text-align: right;">5.46</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">43.34557</td>
+<td style="text-align: right;">41.21439</td>
+<td style="text-align: right;">5.175792</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-02</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Ipsos</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">2195</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">42.00</td>
+<td style="text-align: right;">39.00</td>
+<td style="text-align: right;">6.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">42.02638</td>
+<td style="text-align: right;">38.81620</td>
+<td style="text-align: right;">6.844734</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-04</td>
+<td style="text-align: left;">2016-11-07</td>
+<td style="text-align: left;">YouGov</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">3677</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">45.00</td>
+<td style="text-align: right;">41.00</td>
+<td style="text-align: right;">5.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">45.65676</td>
+<td style="text-align: right;">40.92004</td>
+<td style="text-align: right;">6.069454</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Gravis Marketing</td>
+<td style="text-align: left;">B-</td>
+<td style="text-align: right;">16639</td>
+<td style="text-align: left;">rv</td>
+<td style="text-align: right;">47.00</td>
+<td style="text-align: right;">43.00</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">46.84089</td>
+<td style="text-align: right;">42.33184</td>
+<td style="text-align: right;">3.726098</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Fox News/Anderson Robbins Research/Shaw &amp; Company Research</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">1295</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">48.00</td>
+<td style="text-align: right;">44.00</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">49.02208</td>
+<td style="text-align: right;">43.95631</td>
+<td style="text-align: right;">3.057876</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-02</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">CBS News/New York Times</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">1426</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">45.00</td>
+<td style="text-align: right;">41.00</td>
+<td style="text-align: right;">5.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">45.11649</td>
+<td style="text-align: right;">40.92722</td>
+<td style="text-align: right;">4.341786</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-03</td>
+<td style="text-align: left;">2016-11-05</td>
+<td style="text-align: left;">NBC News/Wall Street Journal</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">1282</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">44.00</td>
+<td style="text-align: right;">40.00</td>
+<td style="text-align: right;">6.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">43.58576</td>
+<td style="text-align: right;">40.77325</td>
+<td style="text-align: right;">5.365788</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">New Mexico</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">2016-11-06</td>
+<td style="text-align: left;">Zia Poll</td>
+<td style="text-align: left;">Melis</td>
+<td style="text-align: right;">8439</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">46.00</td>
+<td style="text-align: right;">44.00</td>
+<td style="text-align: right;">6.00</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">44.82594</td>
+<td style="text-align: right;">41.59978</td>
+<td style="text-align: right;">7.870127</td>
+<td style="text-align: right;">2002</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S.</td>
+<td style="text-align: left;">2016-11-04</td>
+<td style="text-align: left;">2016-11-07</td>
+<td style="text-align: left;">IBD/TIPP</td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: right;">1107</td>
+<td style="text-align: left;">lv</td>
+<td style="text-align: right;">41.20</td>
+<td style="text-align: right;">42.70</td>
+<td style="text-align: right;">7.10</td>
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">42.92745</td>
+<td style="text-align: right;">42.23545</td>
+<td style="text-align: right;">6.316175</td>
+<td style="text-align: right;">2002</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>total_na <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(polls_us_election_2016_modified))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>total_na</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -298,6 +788,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -366,13 +883,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -407,18 +926,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -450,11 +958,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -464,8 +1011,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -477,7 +1033,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -521,6 +1200,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -546,6 +1226,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -607,12 +1313,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../assignments.html" class="pagination-link">
+      <a href="../assignments.html" class="pagination-link" aria-label="My Assignments">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">My Assignments</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../assignments/assignment-2.html" class="pagination-link">
+      <a href="../assignments/assignment-2.html" class="pagination-link" aria-label="Assignment 2">
         <span class="nav-page-text">Assignment 2</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -623,12 +1329,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Hacettepe IE - EMU 430 - Fall 2023</div>
+    <div class="nav-footer-center">
+<p>Hacettepe IE - EMU430 - 2024 Fall</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

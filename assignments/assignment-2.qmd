@@ -2,8 +2,62 @@
 title: "Assignment 2"
 ---
 
-# Assignment 2
+## Part 1
 
-```{r}
-1 + 1
-```
+First, I found the necessary URLs as a result of the filters specified for the assignment.
+
+-   <https://m.imdb.com/search/title/?title_type=feature&release_date=,2009-12-31&num_votes=2500,&country_of_origin=TR&count=250>
+
+-   <https://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR&count=250>
+
+## Part 2
+
+At the beginning of my assignment, I identify and call the libraries that I decide are needed.
+
+![](images/Part%202%201..PNG)
+
+First, I create my url vector from the html links I have determined by filtering.
+
+![](images/part%202%202..PNG)
+
+Then, I created a dataset by extracting the title, year, duration, score and number of votes for the movies from IMDb and combining this information.
+
+![](images/part%202%203..PNG)
+
+![](images/part%202%204..PNG)
+
+## Part 3
+
+a\) I showed the best and worst 5 movies according to the scores in the data frame I prepared.
+
+![](images/part%203%201..PNG)
+
+b\) I chose my 4 favorite movies and created their rankings.
+
+![](images/part%203%202..PNG)
+
+c\) I visualized the average scores, number of films, and score distributions for the films in my dataset by year.
+
+![](images/part%203%203..PNG)
+
+d\) I visualized the correlation between the "Rating" and "Votes" variables in the Movies dataset and printed the result to the screen.
+
+![](images/part%203%204..PNG)
+
+e\) I visualized the correlation between the "Rating" and "Duration" variables in the Movies dataset and printed the result to the screen.
+
+![](images/part%203%205..PNG)
+
+## Part 4
+
+First of all, I converted the list of IMDb's top 1000 Turkish movies into a table with the name and year of each movie using the code below.
+
+![](images/part%204%201..PNG)
+
+Then I created a table by combining the top 1000 Turkish movies and their IMDb scores and sorting them in descending order according to their scores.
+
+![](images/part%204%202..PNG)
+
+And finally I displayed the first 11 rows of the movies data frame sorted in descending order by IMDb rating.
+
+![](images/part%204%203..PNG)

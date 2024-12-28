@@ -1,0 +1,17 @@
+{
+  "hash": "6e2eb27d9e5c7a8fa5b112c95b836cdd",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Assignment 2\"\n---\n\n\n\n\n\n\n\n\n# Assignment 2\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [
+      "assignment-2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

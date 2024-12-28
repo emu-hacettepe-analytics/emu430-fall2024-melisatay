@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome to My Analytics Lab",
     "section": "",
-    "text": "Hello! My name is Melis Atay.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n\n Back to top"
+    "text": "Hello! My name is Melis Atay.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -52,7 +52,7 @@
     "href": "assignments/assignment-2.html",
     "title": "Assignment 2",
     "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
+    "text": "First, I found the necessary URLs as a result of the filters specified for the assignment.\n\nhttps://m.imdb.com/search/title/?title_type=feature&release_date=,2009-12-31&num_votes=2500,&country_of_origin=TR&count=250\nhttps://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR&count=250",
     "crumbs": [
       "Assignment 2"
     ]
@@ -82,6 +82,46 @@
     "text": "(b)\nI imported the dataset “polls_us_election_2016” from the dslabs package and displayed the first 10 rows of the dataset using the kableExtra library to get more readable output:\n\nlibrary(dslabs)\ndata(\"polls_us_election_2016\")\nknitr::kable(head(polls_us_election_2016, 10))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstate\nstartdate\nenddate\npollster\ngrade\nsamplesize\npopulation\nrawpoll_clinton\nrawpoll_trump\nrawpoll_johnson\nrawpoll_mcmullin\nadjpoll_clinton\nadjpoll_trump\nadjpoll_johnson\nadjpoll_mcmullin\n\n\n\n\nU.S.\n2016-11-03\n2016-11-06\nABC News/Washington Post\nA+\n2220\nlv\n47.00\n43.00\n4.00\nNA\n45.20163\n41.72430\n4.626221\nNA\n\n\nU.S.\n2016-11-01\n2016-11-07\nGoogle Consumer Surveys\nB\n26574\nlv\n38.03\n35.69\n5.46\nNA\n43.34557\n41.21439\n5.175792\nNA\n\n\nU.S.\n2016-11-02\n2016-11-06\nIpsos\nA-\n2195\nlv\n42.00\n39.00\n6.00\nNA\n42.02638\n38.81620\n6.844734\nNA\n\n\nU.S.\n2016-11-04\n2016-11-07\nYouGov\nB\n3677\nlv\n45.00\n41.00\n5.00\nNA\n45.65676\n40.92004\n6.069454\nNA\n\n\nU.S.\n2016-11-03\n2016-11-06\nGravis Marketing\nB-\n16639\nrv\n47.00\n43.00\n3.00\nNA\n46.84089\n42.33184\n3.726098\nNA\n\n\nU.S.\n2016-11-03\n2016-11-06\nFox News/Anderson Robbins Research/Shaw & Company Research\nA\n1295\nlv\n48.00\n44.00\n3.00\nNA\n49.02208\n43.95631\n3.057876\nNA\n\n\nU.S.\n2016-11-02\n2016-11-06\nCBS News/New York Times\nA-\n1426\nlv\n45.00\n41.00\n5.00\nNA\n45.11649\n40.92722\n4.341786\nNA\n\n\nU.S.\n2016-11-03\n2016-11-05\nNBC News/Wall Street Journal\nA-\n1282\nlv\n44.00\n40.00\n6.00\nNA\n43.58576\n40.77325\n5.365788\nNA\n\n\nNew Mexico\n2016-11-06\n2016-11-06\nZia Poll\nNA\n8439\nlv\n46.00\n44.00\n6.00\nNA\n44.82594\n41.59978\n7.870127\nNA\n\n\nU.S.\n2016-11-04\n2016-11-07\nIBD/TIPP\nA-\n1107\nlv\n41.20\n42.70\n7.10\nNA\n42.92745\n42.23545\n6.316175\nNA\n\n\n\n\n\nThen I calculated and displayed the total number of NA values in the entire dataset:\n\ntotal_na &lt;- sum(is.na(polls_us_election_2016))\ntotal_na\n\n[1] 11604\n\n\nI replaced all NA values in the “polls_us_election_2016” dataset with my birth year for numeric columns and my name for character or factor columns:\n\nbirth_year &lt;- 2002\nfirst_name &lt;- \"Melis\"\n\npolls_us_election_2016_modified &lt;- polls_us_election_2016\n\nfor (i in 1:nrow(polls_us_election_2016_modified)) {\n    for (j in 1:ncol(polls_us_election_2016_modified)) {\n        if (is.na(polls_us_election_2016_modified[i, j])) {\n            if (is.numeric(polls_us_election_2016_modified[[j]])) {\n                polls_us_election_2016_modified[i, j] &lt;- birth_year\n            } else {\n              \n                if (is.factor(polls_us_election_2016_modified[[j]])) {\n                    polls_us_election_2016_modified[[j]] &lt;- as.character(polls_us_election_2016_modified[[j]])\n                }\n                polls_us_election_2016_modified[i, j] &lt;- first_name\n            }\n        }\n    }\n}\n\nFinally, I printed the first 10 rows of our new data frame polls_us_election_2016_modified and the total number of NAs remaining in the new data frame:\n\nknitr::kable(head(polls_us_election_2016_modified, 10))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstate\nstartdate\nenddate\npollster\ngrade\nsamplesize\npopulation\nrawpoll_clinton\nrawpoll_trump\nrawpoll_johnson\nrawpoll_mcmullin\nadjpoll_clinton\nadjpoll_trump\nadjpoll_johnson\nadjpoll_mcmullin\n\n\n\n\nU.S.\n2016-11-03\n2016-11-06\nABC News/Washington Post\nA+\n2220\nlv\n47.00\n43.00\n4.00\n2002\n45.20163\n41.72430\n4.626221\n2002\n\n\nU.S.\n2016-11-01\n2016-11-07\nGoogle Consumer Surveys\nB\n26574\nlv\n38.03\n35.69\n5.46\n2002\n43.34557\n41.21439\n5.175792\n2002\n\n\nU.S.\n2016-11-02\n2016-11-06\nIpsos\nA-\n2195\nlv\n42.00\n39.00\n6.00\n2002\n42.02638\n38.81620\n6.844734\n2002\n\n\nU.S.\n2016-11-04\n2016-11-07\nYouGov\nB\n3677\nlv\n45.00\n41.00\n5.00\n2002\n45.65676\n40.92004\n6.069454\n2002\n\n\nU.S.\n2016-11-03\n2016-11-06\nGravis Marketing\nB-\n16639\nrv\n47.00\n43.00\n3.00\n2002\n46.84089\n42.33184\n3.726098\n2002\n\n\nU.S.\n2016-11-03\n2016-11-06\nFox News/Anderson Robbins Research/Shaw & Company Research\nA\n1295\nlv\n48.00\n44.00\n3.00\n2002\n49.02208\n43.95631\n3.057876\n2002\n\n\nU.S.\n2016-11-02\n2016-11-06\nCBS News/New York Times\nA-\n1426\nlv\n45.00\n41.00\n5.00\n2002\n45.11649\n40.92722\n4.341786\n2002\n\n\nU.S.\n2016-11-03\n2016-11-05\nNBC News/Wall Street Journal\nA-\n1282\nlv\n44.00\n40.00\n6.00\n2002\n43.58576\n40.77325\n5.365788\n2002\n\n\nNew Mexico\n2016-11-06\n2016-11-06\nZia Poll\nMelis\n8439\nlv\n46.00\n44.00\n6.00\n2002\n44.82594\n41.59978\n7.870127\n2002\n\n\nU.S.\n2016-11-04\n2016-11-07\nIBD/TIPP\nA-\n1107\nlv\n41.20\n42.70\n7.10\n2002\n42.92745\n42.23545\n6.316175\n2002\n\n\n\n\n\n\ntotal_na &lt;- sum(is.na(polls_us_election_2016_modified))\ntotal_na\n\n[1] 0",
     "crumbs": [
       "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2.html#part-1",
+    "href": "assignments/assignment-2.html#part-1",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "First, I found the necessary URLs as a result of the filters specified for the assignment.\n\nhttps://m.imdb.com/search/title/?title_type=feature&release_date=,2009-12-31&num_votes=2500,&country_of_origin=TR&count=250\nhttps://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR&count=250",
+    "crumbs": [
+      "Assignment 2"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2.html#part-2",
+    "href": "assignments/assignment-2.html#part-2",
+    "title": "Assignment 2",
+    "section": "Part 2",
+    "text": "Part 2\nAt the beginning of my assignment, I identify and call the libraries that I decide are needed.\n\nFirst, I create my url vector from the html links I have determined by filtering.\n\nThen, I created a dataset by extracting the title, year, duration, score and number of votes for the movies from IMDb and combining this information.",
+    "crumbs": [
+      "Assignment 2"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2.html#part-3",
+    "href": "assignments/assignment-2.html#part-3",
+    "title": "Assignment 2",
+    "section": "Part 3",
+    "text": "Part 3\na) I showed the best and worst 5 movies according to the scores in the data frame I prepared.\n\nb) I chose my 4 favorite movies and created their rankings.\n\nc) I visualized the average scores, number of films, and score distributions for the films in my dataset by year.\n\nd) I visualized the correlation between the “Rating” and “Votes” variables in the Movies dataset and printed the result to the screen.\n\ne) I visualized the correlation between the “Rating” and “Duration” variables in the Movies dataset and printed the result to the screen.",
+    "crumbs": [
+      "Assignment 2"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2.html#part-4",
+    "href": "assignments/assignment-2.html#part-4",
+    "title": "Assignment 2",
+    "section": "Part 4",
+    "text": "Part 4\nFirst of all, I converted the list of IMDb’s top 1000 Turkish movies into a table with the name and year of each movie using the code below.\n\nThen I created a table by combining the top 1000 Turkish movies and their IMDb scores and sorting them in descending order according to their scores.\n\nAnd finally I displayed the first 11 rows of the movies data frame sorted in descending order by IMDb rating.",
+    "crumbs": [
+      "Assignment 2"
     ]
   }
 ]

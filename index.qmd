@@ -9,5 +9,4 @@ This is my personal webpage.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
 
-![](images/1663006081082-hello.gif)
-
+![](images/1663006081082-hello.gif){fig-align="center" width="455"}
